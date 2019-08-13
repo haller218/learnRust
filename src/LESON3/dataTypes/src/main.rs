@@ -126,6 +126,18 @@ fn arrays_assing () {
 
 }
 
+
+fn initialize_array () {
+
+    let a = [3; 5];
+
+    for i in &a {
+       println!("A: {}",i);
+    }
+
+}
+
+
 fn main () {
 
     test_parsing_type();
@@ -143,4 +155,6 @@ fn main () {
     arrays();
     
     arrays_assing();
+
+    initialize_array();
 }
