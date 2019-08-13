@@ -1,4 +1,4 @@
-fn another_function(x: i32, y: i32) {
+fn _another_function(x: i32, y: i32) {
 
     // println!("yeah, another function call.!");
 
@@ -12,9 +12,19 @@ fn another_function(x: i32, y: i32) {
 // function parameters
 
 
-fn main() {
+fn _test_functions() {
     
     // println!("Hello, world!");
     
-    another_function(4,5);
+    _another_function(4,5);
+}
+
+////
+// this is a statement
+////
+// statement do not return a value.
+
+fn main () {
+
+    let _a: i32 = 42;
 }
