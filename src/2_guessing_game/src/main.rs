@@ -1,47 +1,33 @@
+
 use std::io;
+use std::cmp::Ordering;
+use rand::Rng;
 
-fn exemplo () {
+// Generate Random Number
 
-    let foo = "bar"; // imutable
+fn main(){
 
-//    foo = "11"; // Error, cannot assing twice to immutable variable
 
-    println!("{}",foo);
-}
+    let mut guess = String::new();
 
-fn test_input_io() {
+    let secret_number = rand::thread_rng().gen_range(1,101);
 
-    
-    println!("Guess the number!");
-
-    println!("Please input your guess.");
-
-    let mut guess = String::new(); // mutable
+    println!("Please enter to a number: ");
 
     io::stdin().read_line(&mut guess)
         .expect("Failed to read line");
 
+    // ---- snip ----
+
     println!("You guessed: {}", guess);
-}
 
-fn test_curly_brackets () {
+    match guess.cmp(&secret_number) {
 
-    let x = 5;
-    let y = 10;
-
-    println!("x = {} and y = {}", x, y);
-
-}
-
-fn main () {
-
-    //// test Values and frist part of program is ok
-    // now generating a Secret Number
+        Ordering::Less => println!("Too small"),
+        Ordering::Greater => println!("Too big"),
+        Ordering::Equal => println!("You Wins!"),
+    }
     
-    exemplo();
-
-    test_curly_brackets ();
-    
-    test_input_io();
-
 }
+
+
