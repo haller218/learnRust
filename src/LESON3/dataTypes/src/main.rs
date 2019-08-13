@@ -147,6 +147,17 @@ fn acess_index () {
     println!("Frist: {}, Second: {}",frist,second);
 }
 
+fn _invalid_acess_array () {
+    
+    let a = [1, 2, 3, 4, 5];
+    let index = 10;
+
+    let element = a[index];
+
+    println!("The value of element is: {}", element);
+}
+
+
 fn main () {
 
     test_parsing_type();
