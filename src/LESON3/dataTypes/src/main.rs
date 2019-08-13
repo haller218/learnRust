@@ -137,6 +137,15 @@ fn initialize_array () {
 
 }
 
+fn acess_index () {
+
+    let b = [4;9];
+
+    let frist = b[0];
+    let second = b[1];
+
+    println!("Frist: {}, Second: {}",frist,second);
+}
 
 fn main () {
 
@@ -157,4 +166,6 @@ fn main () {
     arrays_assing();
 
     initialize_array();
+    
+    acess_index();
 }
