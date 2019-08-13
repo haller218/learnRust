@@ -80,6 +80,19 @@ fn booleans () {
     println!("Values: {}, {}", t, f);
 }
 
+// the caracter type;;;
+
+fn caracter_testing () {
+
+    let c = 'z';
+
+    let z = 'Z';
+
+    let heart_eyed_cat = '😻';
+
+    println!("Values: {}, {}, {}", c, z, heart_eyed_cat);
+}
+
 fn main () {
 
     test_parsing_type();
@@ -89,4 +102,6 @@ fn main () {
     numeric_operations();
 
     booleans();
+
+    caracter_testing();
 }
