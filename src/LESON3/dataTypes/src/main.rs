@@ -117,6 +117,15 @@ fn arrays () {
     let _array = [1,2,3,4,5];
 }
 
+fn arrays_assing () {
+
+    let _months = ["January", "February", "March", "April", "May", "June", "July",
+              "August", "September", "October", "November", "December"];
+
+    let _a: [u8; 5] = [1,2,3,4,5];
+
+}
+
 fn main () {
 
     test_parsing_type();
@@ -132,4 +141,6 @@ fn main () {
     the_tuple_type();
 
     arrays();
+    
+    arrays_assing();
 }
