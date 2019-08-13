@@ -93,6 +93,30 @@ fn caracter_testing () {
     println!("Values: {}, {}, {}", c, z, heart_eyed_cat);
 }
 
+////// Compound Types.
+
+fn the_tuple_type (){
+
+    let _tup: (i32, f64, u8) = (500, 6.4, 1);
+    let _tup = (500, 6.4, 1);
+
+    let (_x, y, _z) = _tup;
+
+    println!("the value of y is : {}",y);
+
+    let _five_hundred = _tup.0;
+
+    let _six_point_for = _tup.1;
+
+    let _one = _tup.2;
+}
+
+//// The Array Type.
+
+fn arrays () {
+    let _array = [1,2,3,4,5];
+}
+
 fn main () {
 
     test_parsing_type();
@@ -104,4 +128,8 @@ fn main () {
     booleans();
 
     caracter_testing();
+
+    the_tuple_type();
+
+    arrays();
 }
