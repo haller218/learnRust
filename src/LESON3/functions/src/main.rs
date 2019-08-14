@@ -34,20 +34,44 @@ fn _statement_function () {
 
 fn _functions_bodies_statements () {
 
-    let x = 5;
+    let _x = 5;
 
     let y = {
 
-        let x = 3;
+        let _x = 3;
 
-        x + 1
+        _x + 1
     };
 
     println!("the value of y is: {}", y);
 }
 
+//// 
+// Return value type function
+
+fn _five() -> i32 {
+    5
+}
+
+fn _testing_return_i32_values () {
+
+    let x = _five();
+
+    println!("Value of x is: {}", x);
+}
+
+fn _plus_one (x: i32) -> i32 {
+
+    x + 1
+}
 
 fn main () {
 
-    // https://doc.rust-lang.org/book/ch03-03-how-functions-work.html#functions-with-return-values
+    let x = _plus_one (5);
+
+    println!("Value of x is: {}", x);
 }
+
+// the code not needs the previus declaration in initial scorpe of the file,
+// it's just define then and run.
+
